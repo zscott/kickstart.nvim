@@ -5,3 +5,5 @@ nvim
 
 spell/
 lazy-lock.json
+.elixir-tools/next-ls.log
+.elixir_ls/elixir-tools.nvim/downloads/mhanberg/elixir-ls
