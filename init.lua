@@ -113,10 +113,10 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
-vim.keymap.set('n', '<leader>wh', '<C-w>h', { desc = 'Move to [W]indow [H]eft' })
-vim.keymap.set('n', '<leader>wj', '<C-w>j', { desc = 'Move to [W]indow [D]own' })
-vim.keymap.set('n', '<leader>wk', '<C-w>k', { desc = 'Move to [W]indow [U]p' })
-vim.keymap.set('n', '<leader>wl', '<C-w>l', { desc = 'Move to [W]indow [R]ight' })
+vim.keymap.set('n', '<leader>mh', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+vim.keymap.set('n', '<leader>ml', '<C-w><C-l>', { desc = 'Move focus to the right window' })
+vim.keymap.set('n', '<leader>mj', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+vim.keymap.set('n', '<leader>mk', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 vim.keymap.set('n', '<leader>wq', '<C-w>q', { desc = '[Q]uit window' })
 
 -- Keybinds to work with buffers
@@ -178,7 +178,7 @@ local opts = {
   },
 }
 
-require('lazy').setup("plugins")
+require('lazy').setup 'plugins'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
